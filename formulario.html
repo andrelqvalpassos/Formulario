@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="tax-form.png">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="titulo">Faça seu cadastro</h1>
+        <p id="subtitulo">Insira nos campos suas informações!</p>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome:</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+            <div class="campo">
+                <label for="telefone"><strong>Telefone:</strong></label>
+                <input type="number" name="telefone" id="telefone" required>
+            </div>
+            <div class="campo">
+                <label for="email"><strong>Email:</strong>  </label>
+                <input type="email" name="email" id="email" required>
+            </div>
+        </fieldset>
+        <br>
+        <div class="campo">
+            <label for="mensagem"><strong>Mensagem:</strong></label>
+            <textarea rows="7" style="width: 26em" id="mensagem" name="mensagem" required></textarea>
+        </div>
+        <br>
+        <div class="campo">
+            <label><strong> Qual linguagens você prefere?</strong></label>
+            <select id="linguagens">
+                <option>C</option>
+                <option>Java</option>
+                <option>Python</option>
+                <option>PHP</option>
+                <option>C++</option>
+            </select>
+        </div>
+        <br>
+        <div class="campo">
+            <label><strong>Banco de Dados:</strong></label>
+            <label for="bancodados">
+                <input type="radio" name="bancodados" value="bancodados">MySQL |
+                <input type="radio" name="bancodados" value="bancodados">Postgresql |
+                <input type="radio" name="bancodados" value="bancodados">MongoDB |
+                <input type="radio" name="bancodados" value="bancodados">N/A |
+                <input type="radio" name="bancodados" value="bancodados">Outra
+            </label>
+        </div>
+        <br>
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Turno para Reuniões:</strong></label>
+                <input type="checkbox" id="turnomanha" value="Manhã">
+                <label for="turnomanha">Manhã</label>
+                <input type="checkbox" id="turnotarde" value="Tarde">
+                <label for="turnotarde">Tarde</label>
+                <input type="checkbox" id="turnonoite" value="Noite">
+                <label for="turnonoite">Noite</label>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="tempo"><strong>Horário Sugerido:</strong></label>
+                <input type="time" id="tempo" name="tempo">
+            </div>
+        </fieldset>
+        <br>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="data"><strong>Data Prevista Entrega</strong></label>
+                <input type="date" id="data" name="data" required>
+            </div>
+        </fieldset>
+        <br>
+        <button type="submit" class="butao">Concluido</button>
+        <button type="submit" class="butaodois">Limpar</button>
+
+    </form>
+
+</body>
+
+</html>
